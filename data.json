@@ -1,0 +1,222 @@
+{
+    "products": [
+        {
+            "id": 8,
+            "name": "Игровая приставка PlayStation 5",
+            "price": 49999,
+            "description": "Современная игровая консоль с потрясающей графикой.",
+            "categoryIds": [
+                1,
+                3
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Игровая мышь Logitech G Pro X Superlight",
+            "price": 12990,
+            "description": "Беспроводная мышь для киберспорта.",
+            "categoryIds": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Конструктор LEGO Star Wars",
+            "price": 8999,
+            "description": "Космический корабль из Звездных войн.",
+            "categoryIds": [
+                3
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Книга 'Гарри Поттер и философский камень'",
+            "price": 799,
+            "description": "Первая книга о Гарри Поттере.",
+            "categoryIds": [
+                3
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Рюкзак городской",
+            "price": 3499,
+            "description": "Удобный городской рюкзак для повседневной носки.",
+            "categoryIds": [
+                2
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Видеокарта RTX GeForce 4090",
+            "price": 120000,
+            "description": "Мощнейшая видеокарта для вашего ПК",
+            "categoryIds": [
+                1
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Наушники Sony WH-1000XM5",
+            "price": 35000,
+            "description": "Беспроводные наушники с шумоподавлением",
+            "categoryIds": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Смартфон Samsung Galaxy S23 Ultra",
+            "price": 90000,
+            "description": "Флагманский смартфон с отличной камерой",
+            "categoryIds": [
+                1
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Планшет iPad Pro 12.9\"",
+            "price": 110000,
+            "description": "Мощный планшет для работы и развлечений",
+            "categoryIds": [
+                1
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Умные часы Apple Watch Series 8",
+            "price": 45000,
+            "description": "Функциональные умные часы для активного образа жизни",
+            "categoryIds": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Беспроводная колонка JBL Charge 5",
+            "price": 10000,
+            "description": "Портативная колонка с отличным звуком",
+            "categoryIds": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Электронная книга Kindle Paperwhite",
+            "price": 12000,
+            "description": "Удобная электронная книга с подсветкой",
+            "categoryIds": [
+                1
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Фотоаппарат Canon EOS R6",
+            "price": 200000,
+            "description": "Профессиональный фотоаппарат для фотографов",
+            "categoryIds": [
+                1
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Коврик для мыши Razer Goliathus Extended Chroma",
+            "price": 4000,
+            "description": "Большой коврик для мыши с RGB подсветкой",
+            "categoryIds": [
+                2,
+                3
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Клавиатура механическая HyperX Alloy FPS Pro",
+            "price": 9000,
+            "description": "Компактная механическая клавиатура для геймеров",
+            "categoryIds": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Кукла Barbie Dreamhouse",
+            "price": 15000,
+            "description": "Большой кукольный домик для девочек",
+            "categoryIds": [
+                3
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Настольная игра 'Монополия'",
+            "price": 2500,
+            "description": "Классическая настольная игра для всей семьи",
+            "categoryIds": [
+                3
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Мягкая игрушка Teddy Bear",
+            "price": 1000,
+            "description": "Классический плюшевый мишка",
+            "categoryIds": [
+                3
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Книга 'Властелин колец'",
+            "price": 1200,
+            "description": "Фэнтези роман Дж. Р. Р. Толкиена",
+            "categoryIds": [
+                3,
+                4
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Сумка женская Furla",
+            "price": 25000,
+            "description": "Стильная женская сумка из натуральной кожи",
+            "categoryIds": [
+                2,
+                4
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Ноутбук Apple MacBook Air M2",
+            "price": 130000,
+            "description": "Легкий и мощный ноутбук от Apple",
+            "categoryIds": [
+                1
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Электроника"
+        },
+        {
+            "id": 2,
+            "name": "Аксессуары"
+        },
+        {
+            "id": 3,
+            "name": "Игрушки"
+        },
+        {
+            "id": 4,
+            "name": "Книги и сумки"
+        }
+    ]
+}

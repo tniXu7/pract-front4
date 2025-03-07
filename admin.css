@@ -1,0 +1,238 @@
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f6f8; /* Светлый фон */
+  color: #34495e; /* Темно-синий текст */
+}
+
+/* Секции */
+.section {
+  
+  padding: 25px;
+  border: 1px solid #e2e6ea; /* Светло-серая граница */
+  border-radius: 12px;
+  background-color: #fff; /* Белый фон */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Мягкая тень */
+}
+
+/* Формы */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600; /* Полужирный шрифт для label */
+  color: #2c3e50; /* Темно-синий цвет для label */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  
+  border: 1px solid #bdc3c7; /* Серая граница для input */
+  border-radius: 8px;
+  font-size: 16px;
+  color: #34495e; /* Темно-синий текст для input */
+  box-sizing: border-box; /* Важно, чтобы padding не увеличивал ширину */
+  transition: border-color 0.3s ease; /* Плавная анимация при фокусе */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #3498db; /* Синяя граница при фокусе */
+  outline: none; /* Убираем стандартную обводку при фокусе */
+}
+
+/* Кнопки */
+button {
+  padding: 14px 28px;
+  
+  background-color: #3498db; /* Синий цвет */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500; /* Полужирный шрифт для кнопки */
+  transition: background-color 0.3s ease; /* Плавная анимация при наведении */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Тень для кнопки */
+}
+
+button:hover {
+  background-color: #2980b9; /* Более темный синий цвет при наведении */
+}
+
+/* Список товаров */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Увеличил минимальную ширину */
+  gap: 25px;
+}
+
+.product-card {
+  border: 1px solid #e2e6ea; /* Светло-серая граница */
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background-color: #fff; /* Белый фон */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Мягкая тень */
+}
+
+/* Кнопка удаления */
+.delete-btn {
+  background-color: #c0392b; /* Красный цвет */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b33125; /* Более темный красный цвет при наведении */
+}
+
+/* Чат (Обновленный стиль) */
+.admin-chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 400px; /* Уменьшил ширину */
+  height: 500px;
+  border: 1px solid #e2e6ea; /* Светлая граница */
+  border-radius: 12px;
+  background-color: #fff; /* Белый фон */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07); /* Более выраженная тень */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden; /* Обрезаем контент, выходящий за границы */
+}
+
+.chat-header {
+  padding: 15px;
+  background-color: #3498db; /* Синий фон */
+  color: white;
+  font-weight: 600;
+  border-bottom: none; /* Убираем границу */
+  border-radius: 12px 12px 0 0; /* Скругляем только верхние углы */
+}
+
+.chat-content {
+  display: flex;
+  flex: 1;
+}
+
+.users-panel {
+  width: 150px; /* Уменьшил ширину панели пользователей */
+  border-right: 1px solid #e2e6ea; /* Светлая граница */
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9; /* Светло-серый фон */
+}
+
+.users-header {
+  padding: 10px;
+  background-color: #f9f9f9; /* Светло-серый фон */
+  border-bottom: 1px solid #e2e6ea; /* Светлая граница */
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.users-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.user-item {
+  padding: 12px;
+  border-bottom: 1px solid #e2e6ea; /* Светлая граница */
+  cursor: pointer;
+  font-size: 14px;
+  color: #34495e;
+  transition: background-color 0.2s ease;
+}
+
+.user-item:hover {
+  background-color: #ecf0f1; /* Более светлый фон при наведении */
+}
+
+.user-item.active {
+  background-color: #dbe9f5; /* Светло-синий фон для активного пользователя */
+  font-weight: 500;
+}
+
+.chat-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.message {
+  
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 80%;
+  font-size: 14px;
+}
+
+.admin-message {
+  background-color: #3498db; /* Синий цвет */
+  color: #ffffff;
+  margin-left: auto;
+}
+
+.user-message {
+  background-color: #ecf0f1; /* Светло-серый цвет */
+  color: #34495e;
+}
+
+.system-message {
+  background-color: #f0f3f4; /* Очень светло-серый цвет */
+  color: #7f8c8d;
+  text-align: center;
+  margin: 8px auto;
+  font-size: 12px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #e2e6ea; /* Светлая граница */
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #34495e;
+}
+
+#send-button {
+  margin-left: 10px;
+  padding: 10px 16px; /* Исправлено значение padding, чтобы было более симметричным */
+  background-color: #3498db; /* Синий цвет */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px; /* Сохранен размер шрифта */
+  font-weight: normal; /* Убрано жирное начертание, если оно применялось */
+  transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+  background-color: #2980b9;
+}
