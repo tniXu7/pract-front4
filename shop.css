@@ -206,3 +206,77 @@ body {
 #send-button:hover {
   background: #2980b9;
 }
+.container {
+  display: flex;
+  flex-direction: column; /* Stack filters vertically on smaller screens */
+  align-items: stretch; /* Stretch filters to full width */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow filters to wrap to the next line on smaller screens */
+  gap: 15px;  /* Spacing between filter sections */
+  justify-content: space-between; /* Distribute space evenly between sections */
+}
+
+.search-filter,
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* Two filters per row, minus gap */
+  margin-bottom: 10px;
+}
+
+/* Smaller screens:  Filters take up full width */
+@media (max-width: 600px) {
+  .search-filter,
+  .price-filter {
+      width: 100%;
+  }
+}
+
+.search-filter label,
+.price-filter label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.search-filter input[type="text"],
+.price-filter input[type="number"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  width: 100%;  /* Make inputs fill their container */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.price-filter button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.price-filter button:hover {
+  background-color: #367c39;
+}
+
+/* Optional: Style the inputs when they are focused */
+.search-filter input[type="text"]:focus,
+.price-filter input[type="number"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #4CAF50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add a subtle shadow */
+}
